@@ -1,7 +1,8 @@
 let board = ['', '', '', '', '', '', '', '', ''];
 let playerTime = 0;  // 0 ou 1
-let symbols = ['o', 'x'];
 let gameOver = false;
+
+let symbols = ['o', 'x'];
 
 function handleMove(position) {
 
@@ -15,11 +16,7 @@ function handleMove(position) {
         gameOver = isWin();
 
         if (gameOver == false) {
-            if (playerTime == 0) {
-                playerTime = 1;
-            } else {
-                playerTime = 0;
-            }
+            playerTime = (playerTime == 1) ? 0 : 1
         }
     }
 
@@ -51,5 +48,11 @@ function isWin() {
     }
 
     return false;
+}
 
+function resetGame(){
+    board = ['', '', '', '', '', '', '', '', ''];
+    playerTime = 0;  // 0 ou 1
+    gameOver = false;       
+    console.log("JOGO REINICIADO");
 }
