@@ -4,6 +4,7 @@ Projetos realizados e aprimorados no curso do ProgramadorBr
 - Desafio JS:
 
 Desafio consiste em recplicar/recriar o funcionamento das funções map, filter e reduce em javascript puro
+
 ---
 - Jogo da Velha:
 
