@@ -8,13 +8,20 @@
     <title>Jogo da Memoria</title>
   </head>
   <body>
-    <div id="gameBoard"></div>
+    <div class="main">
+      <h1>Jogo da Memoria Engenharia de Software</h1>
+      <div onclick="flipAllCards()">
+        <button class="button">Ajuda</button>
+      </div>
+      <div>
+        <div id="gameBoard"></div>
 
-    <div id="gameOver">
-      <div>Parabéns, você ganhou!</div>
-      <button id="restart" onclick="restart()">Jogar Novamente</button>
+        <div id="gameOver">
+          <div>Parabéns, você ganhou!</div>
+          <button id="restart" onclick="restart()">Jogar Novamente</button>
+        </div>
+      </div>
     </div>
-    
     <script src="./scripts/game.js"></script>
     <script src="./scripts/script.js"></script>
   </body>

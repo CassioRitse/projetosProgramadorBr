@@ -39,6 +39,31 @@ body {
   transform: rotateY(180deg);
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 25px;
+}
+.button {
+  padding: 10px 20px;
+  border-color: #05c3ff;
+  background: #05c3ff;
+  color: black;
+  font-size: x-large;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  background-color: #101c2c;
+  border-color: #101c2c;
+  color: white;
+  transition: 0.23s ease-in-out;
+}
+
 .card_front {
   transform: rotateY(180deg);
   background-color: #101c2c;

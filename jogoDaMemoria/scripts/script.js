@@ -74,6 +74,22 @@ function flipCard() {
   }
 }
 
+function flipAllCards() {
+  let gameBoard = document.getElementById("gameBoard");
+  const cards = Array.from(gameBoard.getElementsByClassName(CARD));
+
+  // Adiciona a classe "flip" a todas as cartas para virá-las
+  const cardsFlipadas = cards.filter(
+    (card) => !card.classList.contains("flip")
+  );
+
+  cardsFlipadas.forEach((card) => card.classList.add("flip"));
+
+  // Após 3 segundos, remove a classe "flip" para voltar as cartas ao estado anterior (de costas)
+  setTimeout(() => {
+    cardsFlipadas.forEach((card) => card.classList.remove("flip"));
+  }, 1500);
+}
 function restart() {
   starGame();
   let gameOverLayer = document.getElementById("gameOver");

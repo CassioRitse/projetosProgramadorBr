@@ -6,6 +6,12 @@ let game = {
   cards: null,
 
   techs: [
+    "teclado",
+    "mouse",
+    "pendrive",
+    "disquete",
+    "cpu",
+    /*
     "bootstrap",
     "css",
     "electron",
@@ -16,6 +22,7 @@ let game = {
     "mongo",
     "node",
     "react",
+    */
   ],
 
   setCard: function (id) {
